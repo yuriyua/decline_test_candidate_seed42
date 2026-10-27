@@ -1,0 +1,13 @@
+# Environment & Secrets
+.env
+!.env.example
+
+# Composer & Dependencies
+/vendor/
+composer.phar
+.DS_Store
+
+# Files
+src/attempts.csv
+src/audit_trail.csv
+src/fx_rates.csv

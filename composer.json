@@ -1,0 +1,29 @@
+{
+    "name": "payment/retry-engine",
+    "description": "Policy-driven subscription payment retry engine and recoverable revenue analyzer",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RetryEngine\\": "src/"
+        },
+        "files": [
+            "src/autoload.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RetryEngine\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "php tests/run.php",
+        "analyze": "php src/index.php"
+    }
+}
